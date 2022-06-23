@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MON APP</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+
+
+         <h1>Bonjour, Bienvenue sur mon Premier App django</h1>
+         <h2>Aujourd'hui nous somme le {{ date|date:"d F Y " }} </h2>
+         <h3> Il est actuellement {{date|date:"H\hi"}}</h3>
+            <a href="blog/">Clic ici pour voir mon app</a>
+</div>
+</body>
+</html>
